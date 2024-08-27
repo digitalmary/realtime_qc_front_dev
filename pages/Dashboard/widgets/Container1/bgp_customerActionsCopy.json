@@ -1,0 +1,101 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButtonete9wu9bpt.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonete9wu9bpt.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconName": "trash",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": "{{tbl_customers.selectedRow.status !== 'Active'}}",
+      "isVisible": true,
+      "label": "Clear",
+      "menuItems": {},
+      "onClick": "{{showModal('mdl_deleteUser');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonete9wu9bpt": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "asterisk",
+      "id": "groupButtonete9wu9bpt",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Submit",
+      "menuItems": {},
+      "onClick": "{{showModal('mdl_resetPassword');}}",
+      "placement": "CENTER",
+      "widgetId": "kdtpbofy7r"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "566gw8dutn",
+  "leftColumn": 30,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 8,
+  "orientation": "horizontal",
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 7.794189453125,
+  "parentId": "jlmt1oawlz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 32,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "rll9ctueat",
+  "widgetName": "bgp_customerActionsCopy"
+}
